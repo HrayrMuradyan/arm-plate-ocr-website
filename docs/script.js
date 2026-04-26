@@ -24,7 +24,7 @@ imageInput.addEventListener('change', async (e) => {
         loading.style.display = 'flex';
         plateResult.textContent = '-- -- ---'; 
 
-        const response = await fetch('/api/extract-plate', {
+        const response = await fetch('https://hrayrmuradyan-arm-plate-ocr-main.hf.space/api/extract-plate', {
             method: 'POST',
             body: formData
         });
